@@ -5,6 +5,7 @@ require("dotenv").config();
 const userRoutes = require("./routes/user");
 const productRoutes = require("./routes/product");
 const categorieRoutes = require("./routes/categorie");
+// const authRoutes = require("./routes/auth");
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use("/api", userRoutes);
 app.use("/api", productRoutes);
 app.use("/api", categorieRoutes);
+// app.use("/auth", authRoutes);
 
 // routes
 

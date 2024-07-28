@@ -12,6 +12,10 @@ const userSchema = mongoose.Schema({
     correo:{
         type:String,
         require:true
+    },
+    contrasenia:{
+        type:String,
+        require:true
     }
 }
 )
